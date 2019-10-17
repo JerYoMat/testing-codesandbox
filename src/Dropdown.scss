@@ -1,0 +1,72 @@
+$v4-purple: #4640ed;
+$v4-dark-purple: #505882;
+$v4-dark-blue: #2b2b4f;
+$v4-light-purple: #eff1f7;
+$v4-green: #77d59d;
+$v4-red: #d5403c;
+$v4-orange: #ffaf62;
+$v4-yellow: #ffd362;
+$v4-light-purple: #af62ff;
+$v4-white: #ffffff;
+$v4-grey-10: #eeeff3;
+$v4-grey-20: #dee0e8;
+$v4-grey-30: #c0c4d3;
+$v4-grey-40: #939ab4;
+$v4-grey-50: #666666;
+
+.Dropdown {
+  display: inline-block;
+}
+
+.Dropdown__button {
+  background-color: $v4-white;
+  box-sizing: border-box;
+  height: 40px;
+  width: 280px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px $v4-grey-30;
+}
+.Dropdown__button--medium {
+  height: 40px;
+  width: 280px;
+}
+
+.Dropdown__button--small {
+  height: 30px;
+  width: 280px;
+}
+
+.Dropdown__list__wrapper--visible {
+  margin: 4px 0 0 0;
+  max-height: 360px;
+  position: absolute;
+  z-index: 99;
+  background-color: $v4-white;
+  box-sizing: border-box;
+  overflow: auto;
+  transition: max-height 0.3s ease-out;
+  box-shadow: 0 4px 7px 0 rgba(31, 27, 126, 0.12);
+  border: solid 1px #dee0e8;
+  width: 280px;
+}
+
+.Dropdown__list__wrapper--hidden {
+  margin-top: 4px;
+  max-height: 0;
+  position: absolute;
+  z-index: 99;
+  background-color: $v4-white;
+  list-style-type: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border: none;
+  width: 280px;
+}
+
+.Dropdown__list {
+  padding: 0;
+  list-style-type: none;
+  color: $v4-grey-30;
+}
